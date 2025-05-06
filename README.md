@@ -16,3 +16,16 @@ A simple command-line application to simulate an order matching system for BUY/S
 Compile all Java files:
 ```bash
 javac *.java
+```
+Then run the program:
+```bash
+java Main
+```
+
+## Example
+```vbnet
+Enter order (BUY/SELL qty price), or 'exit':
+BUY 5 100
+SELL 5 99
+TRADE: 5 units @ 99.00 (Buy #1 <-> Sell #2)
+```
