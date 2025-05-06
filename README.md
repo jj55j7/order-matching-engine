@@ -1,19 +1,18 @@
-# Order Matching Engine
+# Order Matching Engine (Java)
 
-A simple Java-based order matching system that simulates buyers and sellers placing trade orders. Matches are made when a buyer's price meets or exceeds a seller's price.
+A simple command-line application to simulate an order matching system for BUY/SELL trades.
 
-## How it works
+## 🧠 How It Works
 
-- Buyers post orders like "buy Book A at $10"
-- Sellers post orders like "sell Book A at $8"
-- If there's a match, a trade occurs at the seller's price
+- Users input orders in the form: `BUY 10 100.0`
+- Orders are matched using priority queues based on price and time
+- Matching logic:
+  - BUY matches with lowest-price SELL
+  - SELL matches with highest-price BUY
+  - Ties are broken by timestamp (FIFO)
 
-## Use Case
+## 🚀 How to Run
 
-This could be adapted for a platform like Carousell to match buyers and sellers based on price criteria.
-
-## How to Run
-
-Compile:
+Compile all Java files:
 ```bash
-javac src/OrderMatchingEngine.java
+javac *.java
